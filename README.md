@@ -23,3 +23,9 @@ Bricks clone for Godot test (4.1.3)
 * Networked multiplayer support
   - Likely to be a separate project instead, will likely require architectural changes.
 * Level editor / read external level
+
+## Development setup
+
+Developed against Godot 4.1.3
+
+Using VS Code with `godot-tools` and `GDScript Formatter` extensions.

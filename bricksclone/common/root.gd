@@ -4,11 +4,12 @@ extends Node2D
 var generic_sound = preload("res://sounds/hit_generic.wav")
 
 var elapsed: float = 0.0
-var plays : int = 0
+var plays: int = 0
+
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass # Replace with function body.
+	pass  # Replace with function body.
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
