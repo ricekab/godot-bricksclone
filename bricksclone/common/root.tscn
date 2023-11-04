@@ -1,6 +1,14 @@
-[gd_scene load_steps=2 format=3 uid="uid://dasfxb6g8cot2"]
+[gd_scene load_steps=4 format=3 uid="uid://dasfxb6g8cot2"]
 
 [ext_resource type="Script" path="res://common/root.gd" id="1_w1v4y"]
+[ext_resource type="Script" path="res://common/audio_music.gd" id="2_mbnnv"]
+[ext_resource type="Script" path="res://common/audio_sound_pool.gd" id="3_kolwh"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_w1v4y")
+
+[node name="audio_music" type="AudioStreamPlayer" parent="."]
+script = ExtResource("2_mbnnv")
+
+[node name="audio_sound_pool" type="Node" parent="."]
+script = ExtResource("3_kolwh")
