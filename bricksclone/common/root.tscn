@@ -1,8 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://dasfxb6g8cot2"]
+[gd_scene load_steps=5 format=3 uid="uid://dasfxb6g8cot2"]
 
 [ext_resource type="Script" path="res://common/root.gd" id="1_w1v4y"]
 [ext_resource type="Script" path="res://common/audio_music.gd" id="2_mbnnv"]
 [ext_resource type="Script" path="res://common/audio_sound_pool.gd" id="3_kolwh"]
+[ext_resource type="PackedScene" uid="uid://vpkxh3wujd5f" path="res://common/test_ui.tscn" id="4_aufyr"]
 
 [node name="root" type="Node2D"]
 script = ExtResource("1_w1v4y")
@@ -12,3 +13,7 @@ script = ExtResource("2_mbnnv")
 
 [node name="audio_sound_pool" type="Node" parent="."]
 script = ExtResource("3_kolwh")
+
+[node name="level_container" type="Node" parent="."]
+
+[node name="test_ui" parent="." instance=ExtResource("4_aufyr")]

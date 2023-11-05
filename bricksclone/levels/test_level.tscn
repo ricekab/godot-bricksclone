@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://xuv042jgj0xl"]
+
+[ext_resource type="PackedScene" uid="uid://b7m0bxnhurbka" path="res://entities/paddle_chbody.tscn" id="1_bcgur"]
+
+[node name="test_level" type="Node2D"]
+
+[node name="paddle_chbody" parent="." instance=ExtResource("1_bcgur")]
+position = Vector2(476, 470)
+scale = Vector2(10, 1)

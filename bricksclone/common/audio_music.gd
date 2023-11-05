@@ -3,8 +3,9 @@ extends AudioStreamPlayer
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	self.stream = preload("res://music/sneaky_adventure.mp3")
-	self.play()
+	# self.stream = preload("res://music/sneaky_adventure.mp3")
+	# self.play()
+	pass
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
