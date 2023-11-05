@@ -12,8 +12,8 @@ var plays: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	test_ui.load_test_level_btn.pressed.connect(self._load_test_level_pressed)
-	pass  # Replace with function body.
+	var mainmenu_level = preload("res://levels/mainmenu_level.tscn")
+	level_container.add_child(mainmenu_level.instantiate())
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
@@ -21,6 +21,3 @@ func _process(delta):
 	pass
 
 
-func _load_test_level_pressed():
-	var test_level = preload("res://levels/test_level.tscn")
-	$level_container.add_child(test_level.instantiate())

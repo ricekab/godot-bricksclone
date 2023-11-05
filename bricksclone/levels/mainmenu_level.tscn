@@ -1,0 +1,20 @@
+[gd_scene load_steps=2 format=3 uid="uid://gfgxmupxvvbd"]
+
+[ext_resource type="Script" path="res://levels/mainmenu_level.gd" id="1_hwjhd"]
+
+[node name="mainmenu_level" type="Node2D"]
+script = ExtResource("1_hwjhd")
+
+[node name="mainmenu_root_ui" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 47.0
+offset_bottom = 50.0
+
+[node name="load_test_level_btn" type="Button" parent="mainmenu_root_ui"]
+layout_mode = 0
+offset_left = 298.0
+offset_top = 111.0
+offset_right = 425.0
+offset_bottom = 142.0
+text = "Load Test Level"
