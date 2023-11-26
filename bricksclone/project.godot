@@ -14,3 +14,11 @@ config/name="bricksclone"
 run/main_scene="res://common/root.tscn"
 config/features=PackedStringArray("4.1", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+G_LevelLoader="*res://scripts/level_loader.gd"
+
+[rendering]
+
+renderer/rendering_method="mobile"

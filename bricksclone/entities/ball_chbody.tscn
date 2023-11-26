@@ -1,3 +1,6 @@
-[gd_scene format=3 uid="uid://c68bqt7vi21r2"]
+[gd_scene load_steps=2 format=3 uid="uid://c68bqt7vi21r2"]
+
+[ext_resource type="Script" path="res://entities/ball_chbody.gd" id="1_pqpvn"]
 
 [node name="ball_chbody" type="CharacterBody2D"]
+script = ExtResource("1_pqpvn")

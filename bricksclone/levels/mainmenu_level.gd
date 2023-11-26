@@ -14,6 +14,4 @@ func _process(delta):
 
 
 func _load_test_level_pressed():
-	var test_level = preload("res://levels/test_level.tscn")
-	var level_container = get_node("/root/root/level_container")
-	level_container.add_child(test_level.instantiate())
+	G_LevelLoader.load_level_by_resource_path("res://levels/test_level.tscn")
