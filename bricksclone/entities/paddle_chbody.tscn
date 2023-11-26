@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://b7m0bxnhurbka"]
 
-[ext_resource type="Script" path="res://entities/paddle_chbody.gd" id="1_0rlhb"]
+[ext_resource type="Script" path="res://entities/paddle_chbody.gd" id="1_dnrqe"]
 
 [sub_resource type="Gradient" id="Gradient_lr1d4"]
 offsets = PackedFloat32Array(0)
@@ -15,7 +15,11 @@ height = 16
 size = Vector2(16, 16)
 
 [node name="paddle_chbody" type="CharacterBody2D"]
-script = ExtResource("1_0rlhb")
+collision_mask = 0
+script = ExtResource("1_dnrqe")
+width_scale = null
+max_speed = null
+acceleration = null
 
 [node name="paddle_sprite" type="Sprite2D" parent="."]
 texture = SubResource("GradientTexture2D_vghu7")

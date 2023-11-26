@@ -17,6 +17,7 @@ func _physics_process(delta):
 	else:
 		velocity.x = move_toward(velocity.x, 0, acceleration * delta)
 	velocity.x = clamp(velocity.x, max_speed * -1.0, max_speed)
-	print(direction)
-	print(velocity.x)
+	#print(direction)
+	#print(velocity.x)
+	
 	move_and_slide()

@@ -1,9 +1,35 @@
-[gd_scene load_steps=2 format=3 uid="uid://xuv042jgj0xl"]
+[gd_scene load_steps=5 format=3 uid="uid://xuv042jgj0xl"]
 
+[ext_resource type="Script" path="res://levels/test_level.gd" id="1_4yasu"]
 [ext_resource type="PackedScene" uid="uid://b7m0bxnhurbka" path="res://entities/paddle_chbody.tscn" id="1_bcgur"]
+[ext_resource type="PackedScene" uid="uid://c68bqt7vi21r2" path="res://entities/ball_chbody.tscn" id="2_a3twg"]
+[ext_resource type="PackedScene" uid="uid://b8lbr1a260rd1" path="res://entities/brick_stbody.tscn" id="3_qj2ov"]
 
 [node name="test_level" type="Node2D"]
+script = ExtResource("1_4yasu")
 
 [node name="paddle_chbody" parent="." instance=ExtResource("1_bcgur")]
 position = Vector2(476, 470)
 scale = Vector2(10, 1)
+width_scale = null
+max_speed = null
+acceleration = null
+
+[node name="ball_chbody" parent="." instance=ExtResource("2_a3twg")]
+position = Vector2(473, 404)
+
+[node name="brick_stbody" parent="." instance=ExtResource("3_qj2ov")]
+position = Vector2(372, 234)
+scale = Vector2(3, 1)
+
+[node name="brick_stbody2" parent="." instance=ExtResource("3_qj2ov")]
+position = Vector2(402, 209)
+scale = Vector2(3, 1)
+
+[node name="brick_stbody3" parent="." instance=ExtResource("3_qj2ov")]
+position = Vector2(484, 209)
+scale = Vector2(3, 1)
+
+[node name="brick_stbody4" parent="." instance=ExtResource("3_qj2ov")]
+position = Vector2(459, 235)
+scale = Vector2(3, 1)

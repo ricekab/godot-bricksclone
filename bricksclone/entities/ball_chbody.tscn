@@ -1,6 +1,18 @@
-[gd_scene load_steps=2 format=3 uid="uid://c68bqt7vi21r2"]
+[gd_scene load_steps=4 format=3 uid="uid://c68bqt7vi21r2"]
 
 [ext_resource type="Script" path="res://entities/ball_chbody.gd" id="1_pqpvn"]
 
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_huxri"]
+size = Vector2(12, 12)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_8gn6k"]
+radius = 8.0
+
 [node name="ball_chbody" type="CharacterBody2D"]
 script = ExtResource("1_pqpvn")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_huxri")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("CircleShape2D_8gn6k")

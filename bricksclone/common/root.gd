@@ -13,7 +13,8 @@ var plays: int = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	G_LevelLoader.load_level_by_resource_path("res://levels/mainmenu_level.tscn")
+	#G_LevelLoader.load_level_by_resource_path("res://levels/mainmenu_level.tscn")
+	G_LevelLoader.load_level_by_resource_path("res://levels/test_level.tscn")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
