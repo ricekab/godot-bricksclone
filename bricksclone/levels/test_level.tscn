@@ -11,16 +11,9 @@ script = ExtResource("1_4yasu")
 [node name="paddle_chbody" parent="." instance=ExtResource("1_bcgur")]
 position = Vector2(476, 470)
 scale = Vector2(10, 1)
-width_scale = null
-max_speed = null
-acceleration = null
 
 [node name="ball_chbody" parent="." instance=ExtResource("2_a3twg")]
 position = Vector2(473, 404)
-
-[node name="brick_stbody" parent="." instance=ExtResource("3_qj2ov")]
-position = Vector2(372, 234)
-scale = Vector2(3, 1)
 
 [node name="brick_stbody2" parent="." instance=ExtResource("3_qj2ov")]
 position = Vector2(402, 209)

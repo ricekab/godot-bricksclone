@@ -1,4 +1,6 @@
-[gd_scene load_steps=3 format=3 uid="uid://b8lbr1a260rd1"]
+[gd_scene load_steps=4 format=3 uid="uid://b8lbr1a260rd1"]
+
+[ext_resource type="Script" path="res://entities/brick_stbody.gd" id="1_eddv4"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_2aqqm"]
 size = Vector2(16, 16)
@@ -8,6 +10,7 @@ size = Vector2(16, 16)
 
 [node name="brick_stbody" type="StaticBody2D"]
 collision_mask = 0
+script = ExtResource("1_eddv4")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_2aqqm")

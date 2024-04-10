@@ -29,3 +29,23 @@ Bricks clone for Godot test (4.1.3)
 Developed against Godot 4.1.3
 
 Using VS Code with `godot-tools` and `GDScript Formatter` extensions.
+
+Alternatively you can create Python environment to run linting and formatting.
+
+```
+python -m venv venv
+source venv/bin/activate
+pip install gdtoolkit==4.*
+```
+
+### Linting
+
+```
+gdlint bricksclone
+```
+
+### Formatting
+
+```
+gdformat bricksclone
+```
