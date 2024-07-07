@@ -17,9 +17,20 @@ func _physics_process(delta: float):
 		return
 	var collider = collisionInfo.get_collider()
 	# Determine bounce type, default to bouncing on the normal vector
+	_handle_bounce_type(collisionInfo)
+	if "do_hit" in collider:
+		collider.do_hit()
+	# if collisionInfo.collider.name == "paddle_chbody":
+	velocity *= bounce_speed_scale
+	velocity = velocity.limit_length(max_speed)
+
+func _handle_bounce_type(collisionInfo: KinematicCollision2D):
+	# Handles the bounce behaviour based on the object hit.
+	# Currently only affects direction.
+	var collider = collisionInfo.get_collider()
+	# Determine bounce type, default to bouncing on the normal vector
 	var bounce_type: G_Const.BounceType = G_Const.BounceType.NORMAL
 	if "bounce_type" in collider:
-		print("NO BOUNCE TYPE FOUND IN COLLIDER, using default (normal)")
 		bounce_type = collider.bounce_type
 	match bounce_type:
 		G_Const.BounceType.DIRECT:
@@ -31,9 +42,4 @@ func _physics_process(delta: float):
 		G_Const.BounceType.NORMAL:
 			velocity = velocity.bounce(collisionInfo.get_normal())
 		G_Const.BounceType.REFLECT:
-			pass
-	if "do_hit" in collider:
-		collider.do_hit()
-	# if collisionInfo.collider.name == "paddle_chbody":
-	velocity *= bounce_speed_scale
-	velocity = velocity.limit_length(max_speed)
+			velocity = velocity * -1

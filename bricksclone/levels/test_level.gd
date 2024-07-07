@@ -7,7 +7,7 @@ extends Node2D
 func _input(event):
 	if event.is_action_pressed("ui_accept"):
 		print("Starting game")
-		ball.velocity = Vector2(0, -100)
+		ball.velocity = Vector2(-25, -100)
 		has_started = true
 
 
